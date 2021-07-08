@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body{background-color: black;}
+
+/* 背景 */
+
+.top,.f_top{background-color:rgb(180, 180, 180);}
+
+.t_area{background-color:rgb(181,82,51);}
+
+
+.f_area{background-color:darkgoldenrod;}
+
+/* コンポーネント */
+.bt{background-color:white;}
+
+.bt:hover{background-color:rgb(235,225,169);}
+.bt:focus{background-color:rgb(235,225,169);}
+
+/* メモ作成画面のボタン */
+.f_top>.bt:hover{background-color:pink;}
+.f_top>.bt:focus{background-color:pink;}
+
+.form_area>.bt:hover{background-color:pink;}
+.form_area>.bt:focus{background-color:pink;}
+
+.top>p,.f_top>p{
+	background-color:black;
+	color:white;
+}
+
+
+
+textarea{
+	color:white;
+	background-color:black;
+}
+

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+.total{
+	min-height:100vh;
+	width:794px;
+	margin:0 auto;
+	
+	display:grid;
+	grid-template:
+	"a1"70px
+	"a2"1fr
+	/1fr;
+}
+
+.bt{
+	/* アイコンの縦・横中央揃え */
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+/* メニューバー */
+.top,.f_top{
+	grid-area:a1;
+	
+	display:grid;
+	grid-template:
+	"...   ...   ...   ...   ..."10px
+	"...   t1    ...   t2    ..."50px
+	"...   ...   ...   ...   ..."10px
+	/100px 80px  30px  1fr  180px;
+}
+
+.home{
+	grid-area:t1;
+}
+
+.top>p,.f_top>p{
+	grid-area:t2;
+	
+}
+
+
+/* テキストエリア */
+.t_area{
+	grid-area:a2;
+	
+	display:grid;
+	grid-template:
+	"... ... ..."1fr
+	"... tex ..."150px
+	"... ... ..."2fr
+	/1fr 600px 1fr;
+}
+
+.f_area{
+	grid-area:a2;
+	
+	display:grid;
+	grid-template:
+	"... ... ..."20px
+	"... tex ..."1fr
+	"... ... ..."20px
+	/1fr 600px 1fr;
+}
+
+.area,.form_area{
+	grid-area:tex;
+
+}
+
+.area>.bt,.form_area>.bt{
+	margin:20px auto;
+}
+
+
+
+@media screen and ( max-width:425px ){
+	
+	.total{
+	min-height:100vh;
+	width:375px;
+	margin:0 auto;
+	
+	display:grid;
+	grid-template:
+	"a1"60px
+	"a2"1fr
+	/1fr;
+}
+	
+
+	.top,.f_top{
+	grid-area:a1;
+	
+	display:grid;
+	grid-template:
+	"...   ...   ...   ...   ..."10px
+	"...   t1    ...   t2    ..."40px
+	"...   ...   ...   ...   ..."10px
+	/15px 70px  15px  1fr   15px;
+}
+	
+/* テキストエリア */
+	.t_area{
+	grid-area:a2;
+	
+	display:grid;
+	grid-template:
+	"... ... ..."1fr
+	"... tex ..."150px
+	"... ... ..."5fr
+	/15px 1fr 15px;
+}
+	
+	
+	.f_area{
+	grid-area:a2;
+	
+	display:grid;
+	grid-template:
+	"... ... ..."20px
+	"... tex ..."1fr
+	"... ... ..."100px
+	/15px 1fr 15px;
+}
+
+
+	
+}

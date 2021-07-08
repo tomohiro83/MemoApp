@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'WEB';
+    src: url('/ContentsTree/fonts/NotoSansJP-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{font-family:WEB;}
+
+
+.bt{
+	display:block;
+	width:80px;
+	height:50px;
+	border-radius:5px;
+}
+
+/* 日付 */
+
+.today{
+	width:100%;
+	height:50px;
+	border:2px solid;
+	border-radius:5px;
+	font-size:20px;
+	text-align:center;
+	line-height:50px;
+}
+
+/* タイトル一覧 */
+
+.title{
+	display:block;
+	padding-left:20px;
+	height:50px;
+	width:100%;
+	margin-bottom:20px;
+	font-size:18px;
+	line-height:50px;
+	border-radius:5px;
+	
+	overflow:hidden;
+}
+
+.no_data{
+	width:100%;
+	height:300px;
+	font-size:80px;
+	
+	text-align:center;
+	line-height:300px;
+}
+
+
+/* 断片集 */
+
+.main_title{
+	width:100%;
+	height:50px;
+	border:2px solid;
+	border-radius:5px;
+	font-size:18px;
+	text-align:center;
+	line-height:50px;
+	padding-left:10px;
+	
+	overflow:hidden;
+	}
+
+.contents{
+	min-height:120px;
+	width:100%;
+	padding:5px;
+	margin-bottom:20px;
+	border-radius:5px;
+}
+
+.word{
+	font-size:20px;
+	line-height:1.5;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	
+	word-break: break-word;
+}
+
+
+.bt2{
+	display:block;
+	width:50px;
+	height:30px;
+	border-radius:5px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+
+@media screen and ( max-width:425px ){
+	
+	.bt{
+	width:70px;
+	height:40px;
+}
+	
+	.today{
+	height:40px;
+	line-height:40px;
+	font-size:18px;
+}
+	.title{
+	width:345px;
+	overflow-x:scroll;
+	overflow-y:hidden;
+	white-space:nowrap;
+	}
+	
+	.no_data{
+	height:350px;
+	font-size:50px;
+	line-height:350px;
+}
+	
+/* 断片集 */
+
+	.main_title{
+	height:40px;
+	font-size:14px;
+	line-height:40px;
+	
+	overflow-x:scroll;
+	overflow-y:hidden;
+	white-space:nowrap;
+	}
+
+	.time{font-size:18px;}
+	
+	.word{
+	font-size:18px;
+	line-height:30px;
+}
+
+	.bt2{margin-right:20px;}
+	
+	
+}

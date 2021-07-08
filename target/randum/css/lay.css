@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+.total{
+	min-height:100vh;
+	width:794px;
+	margin:0 auto;
+	
+	display:grid;
+	grid-template:
+	"a1"70px
+	"a2"70px
+	"a3"1fr
+	/1fr;
+}
+
+.bt{
+	/* アイコンの縦・横中央揃え */
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+/* メニューバー */
+.top{
+	grid-area:a1;
+	
+	display:grid;
+	grid-template:
+	"...   ...   ..."10px
+	"...   t2    ..."50px
+	"...   ...   ..."10px
+	/210px 1fr  210px;
+	
+	position:fixed;
+	width:794px;
+	
+}
+
+
+.today{
+	grid-area:t2;
+	
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+/* 日付 */
+.middle{
+	grid-area:a2;
+	
+	display:grid;
+	grid-template:
+	"...   ...   ...   ...   ..."10px
+	"...   lef   ...   rig   ..."50px
+	"...   ...   ...   ...   ..."10px
+	/1fr  80px  80px  80px  1fr;
+	
+	position:fixed;
+	width:794px;
+	
+	top:70px;
+}
+
+.array{grid-area:lef;}
+
+.make{grid-area:rig;}
+
+/* タイトル一覧 */ 
+.under{
+	grid-area:a3;
+	
+	display:grid;
+	grid-template:
+	"...  ...  ..."20px
+	"...  u1   ..."1fr
+	"...  ...  ..."20px
+	/1fr 600px 1fr;
+}
+
+.t_con{
+	grid-area:u1;
+}
+
+
+/* 断片集 */ 
+
+.f_top{
+	grid-area:a1;
+	
+	display:grid;
+	grid-template:
+	"...   ...   ...   ...   ..."10px
+	"...   ft1    ...  ft2    ..."50px
+	"...   ...   ...   ...   ..."10px
+	/100px 80px 30px  1fr  180px;
+	
+	position:fixed;
+	width:794px;
+}
+
+.f_home{grid-area:ft1;}
+
+.main_title{grid-area:ft2;}
+
+
+.f_middle{
+	grid-area:a2;
+	
+	display:grid;
+	grid-template:
+	"...   ...   ...   ...   ...   ...   ...   ...   ..."10px
+	"...   fm1   ...   fm2   ...   fm3   ...   fm4   ..."50px
+	"...   ...   ...   ...   ...   ...   ...   ...   ..."10px
+	/180px 80px  1fr  80px   1fr   80px  1fr  80px   180px ;
+	
+	position:fixed;
+	width:794px;
+	top:70px;
+}
+
+.trash{grid-area:fm1;}
+.re_name{grid-area:fm2;}
+.f_array{grid-area:fm3;}
+.f_make{grid-area:fm4;}
+
+
+.f_under{
+	grid-area:a3;
+	
+	display:grid;
+	grid-template:
+	"...  ...  ..."20px
+	"...  u1   ..."1fr
+	"...  ...  ..."20px
+	/1fr 600px 1fr;
+}
+
+.f_con{
+	grid-area:u1;
+}
+
+.contents{
+	display:grid;
+	grid-template:
+	"...   ...  ..."5px
+	"...   co1  ..."15px
+	"...   ...  ..."5px
+	"...   co2  ..."1fr
+	"...   ...  ..."5px
+	"...   co3  ..."30px
+	"...   ...  ..."5px
+	/10px 580px 10px;
+}
+
+.time{
+	grid-area:co1;
+}
+
+.word{
+	grid-area:co2;
+}
+
+.edit{
+	grid-area:co3;
+	
+	display:flex;
+	justify-content:flex-end;
+}
+
+.bt2{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+
+
+
+@media screen and ( max-width:425px ){
+	
+	.total{
+		width:375px;
+		
+		display:grid;
+		grid-template:
+		"a1"60px
+		"a2"60px
+		"a3"1fr
+		/1fr;
+}
+
+	
+/* タイトル一覧画面 */
+
+	.top{
+	grid-area:a1;
+	
+	display:grid;
+	grid-template:
+	"...   ...   ..."10px
+	"...   t2    ..."40px
+	"...   ...   ..."10px
+	/15px  1fr  15px;
+	
+	position:fixed;
+	width:375px;
+}
+
+	.middle{
+	grid-area:a2;
+	
+	display:grid;
+	grid-template:
+	"...   ...   ...   ...   ..."10px
+	"...   lef   ...   rig   ..."40px
+	"...   ...   ...   ...   ..."10px
+	/1fr  70px  70px  70px  1fr;
+	
+	position:fixed;
+	width:375px;
+	top:60px;
+}
+
+	.under{
+	grid-area:a3;
+	
+	display:grid;
+	grid-template:
+	"...  ...  ..."20px
+	"...  u1   ..."1fr
+	"...  ...  ..."20px
+	/15px 1fr 15px;
+}
+
+
+/* メモ一覧画面 */
+
+
+.f_top{
+	grid-area:a1;
+	
+	display:grid;
+	grid-template:
+	"...   ...  ...   ...   ..."10px
+	"...   ft1  ...  ft2    ..."40px
+	"...   ...  ...   ...   ..."10px
+	/15px 70px 15px  1fr  15px;
+	
+	position:fixed;
+	width:375px;
+}
+
+
+.f_middle{
+	grid-area:a2;
+	
+	display:grid;
+	grid-template:
+	"...   ...   ...   ...   ...   ...   ...   ...   ..."10px
+	"...   fm1   ...   fm2   ...   fm3   ...   fm4   ..."40px
+	"...   ...   ...   ...   ...   ...   ...   ...   ..."10px
+	/15px  70px  1fr   70px   1fr  70px  1fr  70px 15px ;
+	
+	position:fixed;
+	width:375px;
+	top:60px;
+}
+
+
+.f_under{
+	grid-area:a3;
+	
+	display:grid;
+	grid-template:
+	"...  ...  ..."20px
+	"...  u1   ..."1fr
+	"...  ...  ..."20px
+	/15px 1fr 15px;
+}
+
+
+.contents{
+	display:grid;
+	grid-template:
+	"...   ...  ..."5px
+	"...   co1  ..."15px
+	"...   ...  ..."5px
+	"...   co2  ..."1fr
+	"...   ...  ..."5px
+	"...   co3  ..."30px
+	"...   ...  ..."5px
+	/15px 1fr 15px;
+}
+
+.edit{
+	grid-area:co3;
+	
+	display:flex;
+	justify-content:flex-start;
+}
+
+
+}

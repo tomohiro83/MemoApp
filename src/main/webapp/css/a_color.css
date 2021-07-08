@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body{background-color: black;}
+
+.total{background-color:black;}
+
+.message{
+	background-color:black;
+	color:white;
+}
+
+.word2{color:pink;}
+
+.bt{background-color:rgb(235,225,169);}
+
+.bt:hover{background-color:pink;}
+
+.bt:focus{background-color:pink;}

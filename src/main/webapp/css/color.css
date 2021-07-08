@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+body{background-color: black;}
+
+/* 背景 */
+
+.top{background-color:rgb(180, 180, 180);}
+
+.middle{background-color:white;}
+
+.under{background-color:rgb(181,82,51);}
+
+.f_top{background-color:rgb(180, 180, 180);}
+
+.f_middle{background-color:white;}
+
+.f_under{background-color:darkgoldenrod;}
+
+
+/* 各コンポーネント */
+
+.bt{background-color:white;}
+
+.bt:hover{background-color:rgb(235,225,169);}
+
+.bt:focus{background-color:rgb(235,225,169);}
+
+/* タイトル一覧 */
+
+.top>p{
+	background-color:black;
+	color:white;
+}
+
+.title{
+	box-shadow:10px 10px rgb(107,49,29);
+	background-color:black;
+	color:white;
+}
+
+.middle>.bt{background-color:rgb(180, 180, 180);}
+
+.middle>.bt:hover{background-color:rgb(235,225,169);}
+
+.middle>.bt:focus{background-color:rgb(235,225,169);}
+
+
+.title:hover{background-color:gray;}
+
+.title:focus{background-color:gray;}
+
+
+
+/* 断片集 */
+
+.f_top>.bt:hover{background-color:pink;}
+
+.f_top>.bt:focus{background-color:pink;}
+
+.main_title{
+	background-color:black;
+	color:white;
+}
+
+
+.f_middle>.bt{background-color:rgb(180, 180, 180);}
+
+.f_middle>.bt:hover{background-color:pink;}
+
+.f_middle>.bt:focus{background-color:pink;}
+
+.contents{
+	box-shadow:10px 10px rgb(105,75,6);
+	background-color:black;
+	color:white;
+}
+
+.time{color:rgb(180, 180, 180);}
+
+/* メモの中にリンクがあった場合 */
+.word>a{color:#add8e6;}
+.word>a:hover{color:pink;}
+
+
+.bt2{background-color:rgb(180, 180, 180);}
+
+
+.bt2>i{color:black;}
+
+/* ゴミ箱だけ色を変えるための小細工 */
+.f_middle>.del,.edit>.del{
+	background-color:#80aba9;
+	}
+
+/* hoverは最後に書かないと適応されない */
+.bt2:hover{background-color:pink;}
+
+.bt2:focus{background-color:pink;}
+
+
+

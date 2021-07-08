@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+.total{
+	height:100vh;
+	width:794px;
+	margin:0 auto;
+	
+	display:grid;
+	grid-template:
+	"...   ...   ..."1fr
+	"...   wo    ..."150px
+	"...   ...   ..."50px
+	"...   bt    ..."50px
+	"...   ...   ..."1fr
+	/1fr  600px  1fr;
+}
+
+
+.message{
+	grid-area:wo;
+	
+	display:flex;
+	flex-flow:column;
+}
+
+.judge{
+	grid-area:bt;
+	
+	display:grid;
+	grid-template:
+	"...   yes   ...   no    ..."50px
+	/1fr   80px  80px  80px  1fr;
+}
+
+.yes{grid-area:yes}
+
+.no{grid-area:no;}
+
+.bt{
+	/* アイコンの縦・横中央揃え */
+	display:flex;
+	align-items:center;
+	justify-content:center;}
+
+
+@media screen and ( max-width:425px ){
+	
+	.total{
+	width:375px;
+	
+	display:grid;
+	grid-template:
+	"...   ...   ..."1fr
+	"...   wo    ..."150px
+	"...   ...   ..."40px
+	"...   bt    ..."40px
+	"...   ...   ..."1fr
+	/15px  1fr  15px;
+}
+
+.message{
+	grid-area:wo;
+	
+	display:flex;
+	flex-flow:column;
+	
+	overflow:hidden;
+}
+	
+	.judge{
+	grid-area:bt;
+	
+	display:grid;
+	grid-template:
+	"...   yes   ...   no    ..."40px
+	/1fr   70px 70px  70px  1fr;
+}
+	
+	
+	
+	
+}
+

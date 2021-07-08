@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'WEB';
+    src: url('/ContentsTree/fonts/NotoSansJP-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{font-family:WEB;}
+
+.bt{
+	display:block;
+	width:80px;
+	height:50px;
+	border-radius:5px;
+}
+
+.message{
+	font-size:20px;
+	line-height:1.5;
+	padding:10px;
+	border:solid 2px white;
+	border-radius:5px;
+}
+
+.word1{
+	height:100px;
+	line-height:100px;
+	text-align:center;
+	overflow:hidden;
+	}
+	
+.word2{
+	height:50px;
+	line-height:50px;
+	text-align:center;
+}
+
+
+
+@media screen and ( max-width:425px ){
+	
+	.bt{
+	width:70px;
+	height:40px;
+}
+	
+	
+	
+	
+	
+	
+}
+
+
